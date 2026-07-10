@@ -1,0 +1,8 @@
+package print_my_name;
+
+public class PrintMyname {
+	public static void main(String[] args) {
+		System.out.println("내 이름은 장민창 입니다.");
+	}
+
+}
