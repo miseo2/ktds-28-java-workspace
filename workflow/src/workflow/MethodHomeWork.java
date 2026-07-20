@@ -35,6 +35,9 @@ public class MethodHomeWork {
 		b = (float) num1 / num2;
 		return b;
 	}
+	public static void method6 (float a, int b) {
+		
+	}
 	
 	// 7번
 	public static float method7 (float numF1, float numF2) {
