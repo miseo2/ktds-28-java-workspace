@@ -134,6 +134,13 @@ public class MethodHomeWork {
 			}
 			System.out.println();
 		}
+		
+		// 17번
+		public static void method17(int[] numbers3) {
+			for (int i = 0; i <numbers3.length; i++) {
+				numbers3[i] = numbers3[i] * 2;
+			}
+		}
 	
 	public static void main(String[] args) {
 		// 정수형 변수
@@ -261,6 +268,17 @@ public class MethodHomeWork {
 		 * 17. 정수형 배열 변수 1개를 파라미터로 받아, 모든 값들을 배수로 만드는(반환X) 메소드.
 			-> 호출 이후에 main 메소드 내부에서 배열 내부의 값들을 모두 출력.
 		 */
+		System.out.println(numbers3[0]);
+		System.out.println(numbers3[1]);
+		System.out.println(numbers3[2]);
+		System.out.println(numbers3[3]);
+		System.out.println(numbers3[4]);
+		method17(numbers3);
+		System.out.println(numbers3[0]);
+		System.out.println(numbers3[1]);
+		System.out.println(numbers3[2]);
+		System.out.println(numbers3[3]);
+		System.out.println(numbers3[4]);
 
 
 	}
