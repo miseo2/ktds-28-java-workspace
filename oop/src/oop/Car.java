@@ -60,6 +60,19 @@ public class Car {
 		// 브레이크 페달ㅇ르 아주 강하게 밟는다.
 		kona.pressBrakePedal(300);
 		//kona의 시동을 끈다.
+		
+		//카니발의 시동을 켠다
+		carnival.pressEngineStartButton();
+		
+		// 카니발의 가속 페달을 밟는다
+		carnival.pressGasolinPedal (100);
+		carnival.pressGasolinPedal (100);
+		
+		// 카니발의 브레이크 페달을 밟는다
+		carnival.pressBrakePedal(10);
+		carnival.pressBrakePedal(10);
+		
+		
 		kona.pressEngineStartButton();
 		// 인스턴스는 자신의 멤버변수의 값을 할당하거나 출력할 수 있다.
 //		kona.isEnginsStart = true;
