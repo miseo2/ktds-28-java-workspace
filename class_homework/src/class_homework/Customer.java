@@ -12,8 +12,31 @@ public class Customer {
 	int cash;
 	
 	/**
+	 * 구매 상품
+	 */
+	String itemName;
+	
+	/**
+	 * 구매 수량
+	 */
+	int count;
+	
+	/**
 	 * 장바구니
 	 */
-	int buket;
+	int[] cart;
+	
+	public Customer (String itemName, int cash, int count) {
+		this.itemName = itemName;
+		this.cash = cash;
+		this.count = count;
+		
+	}
+	
+	public void buy(String itemName, int price, int count, int cash) {
+		
+	}
+	
+
 	
 }
