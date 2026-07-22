@@ -21,6 +21,7 @@ public class Customer {
 	 */
 	int count;
 	
+	
 	/**
 	 * 장바구니
 	 */

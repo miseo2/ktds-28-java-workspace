@@ -1,7 +1,7 @@
 package class_homework;
 
 /**
- * 판매자
+ * 판매자 클래스
  */
 
 public class Seller {

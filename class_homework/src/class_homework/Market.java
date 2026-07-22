@@ -1,5 +1,8 @@
 package class_homework;
 
+/**
+ * 마켓 클래스
+ */
 public class Market {
 	
 	public static void main(String[] args) {
