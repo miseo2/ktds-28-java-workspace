@@ -6,12 +6,23 @@ public class Student {
 	private int cpp;
 	private int csharp;
 	
+	public Student() {
+//		this.java = 100;
+//		this.python = 100;
+//		this.cpp = 100;
+//		this.csharp = 100;
+		// 생성자 내부에서는 다른 생성자의 호출이 가능하다.
+		// 호출방법: this();
+		this(100, 100, 100, 100);
+	}
+	
 	public Student(int java, int python, int cpp, int csharp) {
 		this.java = java;
 		this.python = python;
 		this.cpp = cpp;
 		this.csharp = csharp;
 	}
+	
 	
 	private int getSumAllScores() {
 		return java + python + cpp + csharp;
@@ -48,6 +59,8 @@ public class Student {
 	public static void main(String[] args) {
 		// 							  java, py, cpp, cs
 		Student student = new Student(100, 80, 75, 95);
+		Student kim = new Student(); // 모든 점수가 100점인 학생 인스턴스.
+		
 //		student.java = 100;
 //		student.python = 80;
 //		student.cpp = 75;

@@ -10,6 +10,7 @@ public class Visitor {
 	 * 고객의 소지금
 	 */
 	private int money;
+	static final int LIMIN_MIN = 25;
 	
 	public Visitor(int money) {
 		this.books = new ComicsBook[10];

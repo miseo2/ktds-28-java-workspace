@@ -38,7 +38,6 @@ public class Restaurant {
 		
 		
 		
-		//고객이 1명
 	}
 	
 	
