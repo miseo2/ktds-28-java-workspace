@@ -51,12 +51,30 @@ public class Car {
 		}
 	}
 	
+
+	@Override //에노테이션 오버라이드   object의 toString 구조를 그대로 들고온것
+	public String toString() {
+		// 출력의 형태를 정의.
+		return this.zero100Seconds + "";
+	}
+	
 	public static void main(String[] args) {
 		// Car 클래스를 이용해 다음을 생성
 		// Car 타입의 kona 인스턴스를 생성
 		Car kona = new Car(8); // 카 타입의 코나 인스턴스
 		// Car 타입의 carnival 인스턴스를생성
 		Car carnival = new Car(7);
+		
+		System.out.println(kona); // Type@HashData
+		System.out.println(carnival); // Type@HashData
+		
+		String name = "sdafkljhadsf";
+		System.out.println(name); // sdafkljhadsf
+		
+		StringBuffer buffer = new StringBuffer();
+		buffer.append("asdfdfsfds");
+		System.out.println(buffer);
+		
 		
 		// kona의 시동을 켠다.
 		kona.pressEngineStartButton();
