@@ -12,4 +12,9 @@ public class Bird extends Animal{
 		super(animalSpecies, name, age,sex, weight, tall, leg);
 	}
 
+	public void fly() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -17,5 +17,15 @@ public class Goods {
 	public int getPrice() {
 		return this.price;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Goods otherGoods) {
+			return this.name.equals(otherGoods.name) &&
+					this.price == otherGoods.price;
+		}
+		
+		return false;
+	}
 
 }

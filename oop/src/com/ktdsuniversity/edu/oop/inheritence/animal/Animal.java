@@ -2,6 +2,7 @@ package com.ktdsuniversity.edu.oop.inheritence.animal;
 
 public class Animal {
 	
+	public static final int FEROCITY = 0;
 	private String animalSpecies; // 종
 	private String name;
 	private int age;
@@ -52,6 +53,11 @@ public class Animal {
 
 	public int getLeg() {
 	    return this.leg;
+	}
+
+	public void intruduce() {
+		// TODO Auto-generated method stub
+		
 	}
 
 
