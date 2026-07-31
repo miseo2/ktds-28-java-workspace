@@ -1,5 +1,9 @@
 package com.ktdsuniversity.edu.oop.collection.list;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +16,29 @@ public class GoodsHolder {
 	
 	public GoodsHolder() {
 		this.goods = new ArrayList<>();
+		this.loadGoods();
 		}
+	
+	private void loadGoods() {
+		// 파일을 읽는다.
+		File database = new File("C:\\Java Exam", "goods.text");
+		if (database.exists() && database.isFile()) {
+			List<String> goodsList = null;
+			try {
+				goodsList = Files.readAllLines(database.toPath());
+			} catch(IOException ioe) {
+				ioe.printStackTrace();
+			}
+			
+			if (goodsList != null) {
+				String[] goodsInfo = null;
+				for (int i =0; i< goodsList.size();i++) {
+					goodsInfo = goodsList.get(i).split(",");
+					this.addGoods(goodsInfo[0], goodsInfo[1]);
+				}
+			}
+		}
+	}
 	
 	
 	public void addGoods(String name, String price) {
@@ -44,6 +70,27 @@ public class GoodsHolder {
 		this.goods.add(new Goods(name, price));
 			
 		}
+	
+	public void addGoods(String name, int price, boolean addToFile) {
+		this.addGoods(name, price);
+		
+		if (addToFile) {
+			File database = new File("C:\\Java Exam", "goods.text");
+			
+			if(!database.getParentFile().exists()) {
+				database.getParentFile().mkdirs();
+			}
+			
+			List<String> data = new ArrayList<>();
+			data.add("%s,%d".formatted(name, price));
+			
+			try {
+				Files.write(database.toPath(), data, StandardOpenOption.APPEND);
+			} catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
+		}
+	}
 	
 	
 	public void removeGoods(int goodsIndex) {
