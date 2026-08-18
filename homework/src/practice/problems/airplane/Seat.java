@@ -14,7 +14,7 @@ public class Seat {
 		this.name = name;
 		this.grade = grade;
 		this.fee = fee;
-		this.reservation = (int) (Math.random() * 2) + 1;
+		this.reservation = (int) (Math.random() * 2);
 	}
 	
 	/*getter*/
@@ -28,6 +28,11 @@ public class Seat {
 	
 	public int getFee() {
 		return this.fee;
+	}
+	
+	/*setter*/
+	public void setReservation(int reservation) {
+		this.reservation = reservation;
 	}
 
 }
