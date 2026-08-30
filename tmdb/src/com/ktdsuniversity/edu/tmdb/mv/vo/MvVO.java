@@ -116,5 +116,14 @@ public class MvVO {
 	public void setBxOffcRvn(long bxOffcRvn) {
 		this.bxOffcRvn = bxOffcRvn;
 	}
+	@Override
+	public String toString() {
+		return "MvVO [mvId=" + mvId + ", ttl=" + ttl + ", mvRtng=" + mvRtng + ", rnngTm=" + rnngTm + ", rlsDt=" + rlsDt
+				+ ", smmr=" + smmr + ", mainPstrUrl=" + mainPstrUrl + ", fbUrl=" + fbUrl + ", xUrl=" + xUrl
+				+ ", instaUrl=" + instaUrl + ", tgln=" + tgln + ", orgnlTtl=" + orgnlTtl + ", plyng=" + plyng
+				+ ", orgnlLngg=" + orgnlLngg + ", btgt=" + btgt + ", bxOffcRvn=" + bxOffcRvn + "]";
+	}
+	
+	
 
 }
