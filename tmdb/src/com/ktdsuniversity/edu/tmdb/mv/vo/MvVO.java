@@ -1,5 +1,15 @@
 package com.ktdsuniversity.edu.tmdb.mv.vo;
 
+import java.util.List;
+
+import com.ktdsuniversity.edu.tmdb.appr.vo.ApprVO;
+import com.ktdsuniversity.edu.tmdb.bckgrd.vo.BckgrdVO;
+import com.ktdsuniversity.edu.tmdb.flmmkr.vo.FlmmkrVO;
+import com.ktdsuniversity.edu.tmdb.gnr.vo.GnrVO;
+import com.ktdsuniversity.edu.tmdb.kwrd.vo.KwrdVO;
+import com.ktdsuniversity.edu.tmdb.pstr.vo.PstrVO;
+import com.ktdsuniversity.edu.tmdb.vd.vo.VdVO;
+
 public class MvVO {
 	
 	private String mvId;
@@ -19,7 +29,47 @@ public class MvVO {
 	private long btgt;
 	private long bxOffcRvn;
 	
+	// 하나의 영화는 여러 개의 동영상을 가지고 있다.
+	private List<VdVO> vdList;
 	
+	// 하나의 영화는 여러 개의 배경을 가지고 있다.
+	private List<BckgrdVO> bckgrdList;
+	
+	// 하나의 영화는 여러 개의 포스터를 가지고 있다.
+	private List<PstrVO> pstrList;
+	
+	// 하나의 영화는 여러명이 제작했다.
+	private List<FlmmkrVO> flmmkrList;
+	// 하나의 영화에 여러명이 출연했다.
+	private List<ApprVO> apprList;
+	
+	// 하나의 영화는 여러개의 장르가 있다.
+	private List<GnrVO> gnrlList;
+	// 하나의 영화는 여러개의 키워드가 있다.
+	
+	private List<KwrdVO> kwrdList;
+	
+	
+	
+	public List<VdVO> getVdList() {
+		return this.vdList;
+	}
+	public List<BckgrdVO> getBckgrdList() {
+		return this.bckgrdList;
+	}
+	public List<PstrVO> getPstrList() {
+		return this.pstrList;
+	}
+	
+	public void setVdList(List<VdVO> vdList) {
+		this.vdList = vdList;
+	}
+	public void setBckgrdList(List<BckgrdVO> bckgrdList) {
+		this.bckgrdList = bckgrdList;
+	}
+	public void setPstrList(List<PstrVO> pstrList) {
+		this.pstrList = pstrList;
+	}
 	public String getMvId() {
 		return this.mvId;
 	}

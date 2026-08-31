@@ -1,12 +1,22 @@
 package com.ktdsuniversity.edu.tmdb.vd.vo;
 
+import com.ktdsuniversity.edu.tmdb.mv.vo.MvVO;
+
 public class VdVO {
 	
 	private String vdId;
 	private String vdUrl;
 	private String mvId;
 	
+	// 하나의 영상은 하나의 영화를 위한 것이다.
+	private MvVO mvVO;
 	
+	public void setMvVO(MvVO mvVO) {
+		this.mvVO = mvVO;
+	}
+	public MvVO getMvVO() {
+		return this.mvVO;
+	}
 	public String getVdId() {
 		return this.vdId;
 	}

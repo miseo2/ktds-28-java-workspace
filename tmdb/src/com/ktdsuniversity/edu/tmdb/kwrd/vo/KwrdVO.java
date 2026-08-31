@@ -1,10 +1,16 @@
 package com.ktdsuniversity.edu.tmdb.kwrd.vo;
 
+import java.util.List;
+
+import com.ktdsuniversity.edu.tmdb.mv.vo.MvVO;
+
 public class KwrdVO {
 	
 	private String kwrdId;
 	private String kwrd;
 	
+	//하나의 키워드는 여러개의 영화가 있다.
+	private List<MvVO> mvVO; 
 	
 	public String getKwrdId() {
 		return this.kwrdId;
