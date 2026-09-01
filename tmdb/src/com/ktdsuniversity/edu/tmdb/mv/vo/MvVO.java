@@ -142,7 +142,7 @@ public class MvVO {
 	public void setFbUrl(String fbUrl) {
 		this.fbUrl = fbUrl;
 	}
-	public void setxUrl(String xUrl) {
+	public void setXUrl(String xUrl) {
 		this.xUrl = xUrl;
 	}
 	public void setInstaUrl(String instaUrl) {
@@ -166,6 +166,32 @@ public class MvVO {
 	public void setBxOffcRvn(long bxOffcRvn) {
 		this.bxOffcRvn = bxOffcRvn;
 	}
+	
+	public List<FlmmkrVO> getFlmmkrList() {
+		return this.flmmkrList;
+	}
+	public void setFlmmkrList(List<FlmmkrVO> flmmkrList) {
+		this.flmmkrList = flmmkrList;
+	}
+	public List<ApprVO> getApprList() {
+		return this.apprList;
+	}
+	public void setApprList(List<ApprVO> apprList) {
+		this.apprList = apprList;
+	}
+	public List<GnrVO> getGnrlList() {
+		return this.gnrlList;
+	}
+	public void setGnrlList(List<GnrVO> gnrlList) {
+		this.gnrlList = gnrlList;
+	}
+	public List<KwrdVO> getKwrdList() {
+		return this.kwrdList;
+	}
+	public void setKwrdList(List<KwrdVO> kwrdList) {
+		this.kwrdList = kwrdList;
+	}
+	
 	@Override
 	public String toString() {
 		return "MvVO [mvId=" + mvId + ", ttl=" + ttl + ", mvRtng=" + mvRtng + ", rnngTm=" + rnngTm + ", rlsDt=" + rlsDt

@@ -47,6 +47,22 @@ public class FlmmkrVO {
 	public void setPrt(String prt) {
 		this.prt = prt;
 	}
+	
+	
+	public MvVO getMvVO() {
+		return this.mvVO;
+	}
+	public InvlvdVO getInvlvdVO() {
+		return this.invlvdVO;
+	}
+	
+	
+	public void setMvVO(MvVO mvVO) {
+		this.mvVO = mvVO;
+	}
+	public void setInvlvdVO(InvlvdVO invlvdVO) {
+		this.invlvdVO = invlvdVO;
+	}
 	@Override
 	public String toString() {
 		return "FlmmkrVO [flmmkrId=" + flmmkrId + ", invlvdId=" + invlvdId + ", mvId=" + mvId + ", flmmkr=" + flmmkr
